@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             let afterConstant = velocity > 0 ? maxTopConstraintConstant : minTopConstraintConstant
             let distance = afterConstant - beforeConstant
             topConstraint.constant = afterConstant
-            UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: velocity / distance, options: .CurveLinear, animations: {
+            UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: velocity / distance, options: .CurveLinear, animations: {
                 self.view.layoutIfNeeded()
             }, completion: nil)
         default: break
